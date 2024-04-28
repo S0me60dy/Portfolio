@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Site</title>
+    <link rel="stylesheet" href="../public/styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header-container"></div> <!-- Header will be loaded here -->
+
+    <main>
+        <p>This is the project page</p>
+    </main>
+
+    <div class="footer-container"></div> <!-- Footer will be loaded here -->
+
+    <script>
+        $(function(){
+            $(".header-container").load("header.html");
+            $(".footer-container").load("footer.html");
+        });
+    </script>
+</body>
+</html>

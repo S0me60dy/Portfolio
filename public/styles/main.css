@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
+    background: linear-gradient(-45deg, #EE7752,#E73C7E,#23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+    background-color: #fff;
+}
+
+
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* Header styling*/
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: black;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px; /* Adjust based on your logo's dimensions */
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    padding-right: 40px;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    color: #23A6D5;
+}
+
+
+/* Footer styling*/
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: blanchedalmond;
+    position: relative; 
+    z-index: 2;
+}
+.footer p {
+    position: relative; /* Ensure text shadow falls behind text */
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Text shadow for legibility */
+}

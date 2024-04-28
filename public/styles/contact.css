@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contact-page{
+    max-width: 80%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: beige;
+    height: 70%;
+    margin: 20px;
+    padding: 40px 60px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    flex-basis: 60%;
+}
+
+.contact{
+    flex-basis: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    background-color: beige;
+    border: 1px solid #666;
+}
+
+textarea{
+    height: 130px;
+    resize: none;
+}
+
+button {
+    background-color: rgb(95, 201, 218);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+}
+
+button:hover {
+    background-color: rgb(55, 145, 158);
+}
+
+.input{
+    position: relative;
+}
+
+label{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    padding: 0px 5px;
+    color: #666;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+input:focus + label, textarea:focus + label{
+    top: -10px;
+    font-size: 14px;
+    color: rgb(95, 201, 218);
+    background: beige;
+}
+
+
+input:focus, textarea:focus, input.focus, textarea.focus {
+    border: 1px solid rgb(95, 201, 218); 
+}
+
+.contains-text {
+    top: -10px;
+    font-size: 14px;
+    color: rgb(95, 201, 218);
+    background-color: beige;
+    pointer-events: none; 
+}
+
+input.contains-text, textarea.contains-text {
+    border: 1px solid rgb(95, 201, 218); 
+}
+
+@media (min-width: 650px) and (max-width: 1450px){
+    .contact-page{
+        max-width: 80%;
+        height: 110vh;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-info{
+        margin-bottom: 50px;
+        border-bottom: 1px solid #666;
+    }
+
+    .form{
+        width: 400px;
+        max-width: 500px;
+        margin-right: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 25px;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        max-width: 480px;
+        outline: none;
+        background-color: beige;
+        border: 1px solid #666;
+    }
+    input:focus + label, textarea:focus + label{
+        top: -10px;
+        font-size: 14px;
+        color: rgb(95, 201, 218);
+        background: beige;
+    }
+    
+    
+    input:focus, textarea:focus, input.focus, textarea.focus {
+        border: 1px solid rgb(95, 201, 218); 
+    }
+    
+    .contains-text {
+        top: -10px;
+        font-size: 14px;
+        color: rgb(95, 201, 218);
+        background-color: beige;
+        pointer-events: none; 
+    }
+    
+    input.contains-text, textarea.contains-text {
+        border: 1px solid rgb(95, 201, 218); 
+    }
+}
+
+@media (max-width: 649px) {
+
+    .contact-page{
+        height: 130vh;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .contact-info{
+        margin: 0;
+        border-bottom: 1px solid #666;
+    }
+
+    .form{
+        max-width: 500px;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 25px;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        max-width: 480px;
+        outline: none;
+        background-color: beige;
+        border: 1px solid #666;
+    }
+
+    textarea{
+        height: 180px;
+        resize: none;
+    }
+
+    input:focus + label, textarea:focus + label{
+        top: -10px;
+        font-size: 14px;
+        color: rgb(95, 201, 218);
+        background: beige;
+    }
+    
+    
+    input:focus, textarea:focus, input.focus, textarea.focus {
+        border: 1px solid rgb(95, 201, 218); 
+    }
+    
+    .contains-text {
+        top: -10px;
+        font-size: 14px;
+        color: rgb(95, 201, 218);
+        background-color: beige;
+        pointer-events: none; 
+    }
+    
+    input.contains-text, textarea.contains-text {
+        border: 1px solid rgb(95, 201, 218); 
+    }
+}

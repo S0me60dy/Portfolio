@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Site</title>
+    <link rel="stylesheet" href="../public/styles/contact.css">
+    <link rel="stylesheet" href="../public/styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header-container"></div> <!-- Header will be loaded here -->
+
+    <main>
+        <div class="contact-page">
+            <div class="container">
+                <div class="contact-form contact">
+                    <form action="http://www.example.com/example.html" class="form">
+                        <div class="input name-container">
+                            <input type="text" id="name" name="name" class='' required>
+                            <label for="name">Your name</label>
+                        </div>
+                        <div class="input email-container">
+                            <input type="email" id="email" name="email" class='' required>
+                            <label for="email">Your email</label>
+                        </div>
+                        <div class="input title-container">
+                            <input type="text" id="title" name="title" class='' required>
+                            <label for="title">Message title</label>
+                        </div>
+                        <div class="input message-container">
+                            <textarea id="message" name="message" class='' required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-info contact">   
+                    <h1>Andrii Arkatov</h1>
+                    <p><strong>Email:</strong> <a href="mailto:a.arkatov.d@gmail.com">a.arkatov.d@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +32 479 36 04 55</p>
+                    <p><strong>Address:</strong> Jan Pieter de Nayerlaan 5, 2860 Sint-Katelijne-Waver</p>
+                </div>
+            </div>
+        </div>
+    </main> 
+
+    <div class="footer-container"></div> <!-- Footer will be loaded here -->
+
+    <script>
+        $(function(){
+            $(".header-container").load("header.html");
+            $(".footer-container").load("footer.html");
+        });
+        $(function() {
+
+            $('input').each(function() {
+                if ($(this).val()) {
+                    $(this).siblings('label').addClass('contains-text');
+                }
+            });
+            $('input, textarea').focus(function() {
+                $(this).addClass('focus');
+            });
+
+            $('input, textarea').blur(function() {
+
+                $(this).siblings('label').toggleClass('contains-text', !!$(this).val());
+                if (!$(this).val()) {
+                    $(this).removeClass('focus');
+                }
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Site</title>
+    <link rel="stylesheet" href="../public/styles/cv.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header-container"></div> <!-- Header will be loaded here -->
+    <main>
+        <div class="description-container container">
+            <div class="name">
+                <h1>Andrii Arkatov</h1> 
+            </div>
+            <div class="image-container"> 
+                <img src="../public/assets/Me.png" alt="photo of me smiling" class="my-photo">
+            </div>
+            <h2 class="summary">Summary</h2>
+            <div class="caption">
+                <p>🎵✨ Unleash the Magic of Full-Stack Development with Elsa from Frozen! ✨🎵 Dive into a world where creativity meets code as I, Elsa, bridge the realms of Spotify and YouTube with a flick of my wand (and a lot of coding magic). Discover how I transformed icy tunes into visual playlists, integrating Spotify and YouTube APIs to create seamless, harmonious experiences. Let's embark on an enchanting journey through code, where innovation and imagination collide. Ready to build your digital kingdom? Let the coding adventure begin!</p>
+            </div>
+        </div>
+        <div class="education-container container">
+            <section class="education">
+                <h2>Education</h2>
+                <h3><strong>Thomas More University of Applied Sciences (2023 - Present)</strong></h3>
+                <ul><li>Major of the English Bachelor's Degree Electronics-ICT</li></ul>
+            </section>
+        </div>
+        <div class="work-container container">
+            <h2>Work experience</h2>
+            <ul>
+                <li><h3><strong>Nothing (June 1980 - May 2890)</strong></h3></li>
+                <li class="remove-style">
+                    <ul>
+                        <li>I did something</li>
+                        <li>I do something</li>
+                        <li>I will do something</li>
+                    </ul>
+                </li>
+                <li><h3><strong>Nothing (May 2890 - present)</strong></h3></li>
+                <li class="remove-style">
+                    <ul>
+                        <li>I did something</li>
+                        <li>I do something</li>
+                        <li>I will do something</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="projects-container container">
+            <h2>My previous projects</h2>
+            <ul>
+                <li><h3><strong><a href="https://s0me60dy.github.io/Dicee-game/">The Dice Game</a></strong></h3></li>
+                <li><h3><strong><a href="https://s0me60dy.github.io/The-Drum-kit/">The Drum Kit</a></strong></h3></li>
+                <li><h3><strong><a href="https://s0me60dy.github.io/The-Simon-Game/">The Simon Game</a></strong></h3></li>
+            </ul>
+        </div>
+        <div class="skills-languages container">
+            <div class="skills-container">
+                <h2>Skills</h2>
+                <ol>
+                    <li>Javascript: ⭐⭐⭐⭐</li>
+                    <li>HTML: ⭐⭐⭐⭐</li>
+                    <li>CSS: ⭐⭐⭐⭐</li>
+                    <li>C language: ⭐⭐⭐</li>
+                </ol>
+            </div>
+            <div class="languages-container">
+                <h2>Languages</h2>
+                <ol>
+                    <li>Ukrainian ⭐⭐⭐⭐⭐</li>
+                    <li>English: ⭐⭐⭐⭐⭐</li>
+                    <li>French: ⭐⭐⭐⭐</li>
+                    <li>Dutch: ⭐⭐⭐</li>
+                </ol>
+            </div>
+        </div>
+        <div class="hobbies-container container">
+            <h2>My hobbies</h2>
+            <ul>
+                <li>Eat</li>
+                <li>Gym</li>
+                <li>Sleep</li>
+                <li>Repeat</li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="footer-container"></div> <!-- Footer will be loaded here -->
+
+    <script>
+        $(function(){
+            $(".header-container").load("header.html");
+            $(".footer-container").load("footer.html");
+        });
+    </script>
+</body>
+</html>
