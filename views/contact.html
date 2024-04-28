@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../public/styles/contact.css">
     <link rel="stylesheet" href="../public/styles/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../fancy_inputs.js"></script>
+    <script src="../footer_header.js"></script>
 </head>
 <body>
     <div class="header-container"></div> <!-- Header will be loaded here -->
@@ -17,19 +19,19 @@
                 <div class="contact-form contact">
                     <form action="http://www.example.com/example.html" class="form">
                         <div class="input name-container">
-                            <input type="text" id="name" name="name" class='' required>
+                            <input type="text" id="name" name="name" class=''>
                             <label for="name">Your name</label>
                         </div>
                         <div class="input email-container">
-                            <input type="email" id="email" name="email" class='' required>
+                            <input type="email" id="email" name="email" class=''>
                             <label for="email">Your email</label>
                         </div>
                         <div class="input title-container">
-                            <input type="text" id="title" name="title" class='' required>
+                            <input type="text" id="title" name="title" class=''>
                             <label for="title">Message title</label>
                         </div>
                         <div class="input message-container">
-                            <textarea id="message" name="message" class='' required></textarea>
+                            <textarea id="message" name="message" class=''></textarea>
                             <label for="message">Message</label>
                         </div>
                         <button type="submit">Send</button>
@@ -47,32 +49,6 @@
 
     <div class="footer-container"></div> <!-- Footer will be loaded here -->
 
-    <script>
-        $(function(){
-            $(".header-container").load("header.html");
-            $(".footer-container").load("footer.html");
-        });
-        $(function() {
-
-            $('input').each(function() {
-                if ($(this).val()) {
-                    $(this).siblings('label').addClass('contains-text');
-                }
-            });
-            $('input, textarea').focus(function() {
-                $(this).addClass('focus');
-            });
-
-            $('input, textarea').blur(function() {
-
-                $(this).siblings('label').toggleClass('contains-text', !!$(this).val());
-                if (!$(this).val()) {
-                    $(this).removeClass('focus');
-                }
-            });
-        });
-
-        
-    </script>
+    
 </body>
 </html>
