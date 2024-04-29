@@ -1,0 +1,16 @@
+/* Footer styling*/
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: blanchedalmond;
+    position: relative; 
+    z-index: 2;
+}
+.footer p {
+    font-size: 14px;
+    position: relative; /* Ensure text shadow falls behind text */
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Text shadow for legibility */
+}
