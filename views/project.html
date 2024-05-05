@@ -5,16 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example Site</title>
     <link rel="stylesheet" href="../public/styles/main.css">
+    <link rel="stylesheet" href="../public/styles/project.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../footer_header.js"></script>
 </head>
 <body>
     <div class="header-container"></div> <!-- Header will be loaded here -->
-
     <main>
-        <p>This is the project page</p>
+            <div class="container-about border-bottom container">
+                <h2>About Me</h2>
+                <p>Hi, I'm Andrii, a first year student of ICT at Thomas More Mechelen-Antwerp, Campus De Nayer. I am developing a tool to convert Spotify playlists to YouTube playlists using modern web APIs.</p>
+            </div>
+            <div class="slideshow-container border-bottom container">
+                <h2>Project Screenshots</h2>
+                    <div class="flex-slideshow">
+                        <div class="mySlides fade">
+                            <img src="../public/assets/Screenshot_2.png" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="../public/assets/Youtube.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <!--
+                            Below is an image by ChatGPT of how my frontend will look like after I complete the project.
+                            If chatGPT believes that it will look like this, I do also
+                            -->
+                            <img src="../public/assets/future_by_chatGPT.png" style="width:100%"> 
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="software-container border-bottom container">
+                <h2>Software Architecture</h2>
+                <p>Here's how our application integrates Spotify and YouTube APIs to manage your music playlists across platforms.</p>
+                <p>Biggest problems in my project so far were setting up OAuth 2.0 for Spotify and Youtube and making the request to Youtube API</p>
+                <div class="software-diagram">
+                    <img src="../public/assets/whimsical_flowchart.png" alt="Software Block Diagram">
+                </div>
+            </div>
     </main>
-
     <div class="footer-container"></div> <!-- Footer will be loaded here -->
-</body>
+</body> 
+<script src="../project_page.js"></script> 
 </html>
