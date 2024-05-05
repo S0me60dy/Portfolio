@@ -3,6 +3,8 @@ $(function(){
     $(".footer-container").load("footer.html");
 });
 
+// Idea of the code below is inspired by www.razor.com webpage
+
 $(function() {
 
     $('input').each(function() {
